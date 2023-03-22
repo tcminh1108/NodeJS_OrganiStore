@@ -1,0 +1,11 @@
+{
+    "mongodb":{
+       "username": "tcminh1108",
+       "password": "a123456",
+       "database":"DBOrderFood"
+    },
+    "jwt": {
+      "secret":"goK!pusp6ThEdURUtRenOwUhAsWUCLheBazl!uJLPlS8EbreWLdrupIwabRAsiBu"
+     }  
+ }
+ 

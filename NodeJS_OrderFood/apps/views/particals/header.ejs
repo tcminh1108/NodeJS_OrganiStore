@@ -1,0 +1,159 @@
+<!-- Header -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__top__left">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i> ogani@gmail.com</li>
+                            <li>Free Shipping for all Order</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="header__logo">
+                    <a href="/home"><img src="/public/img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="active"><a href="/home">Home</a></li>
+                        <li><a href="/food?category_id=0">Shop</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="./shop-details.html">Shop Details</a></li>
+                                <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                <li><a href="./checkout.html">Check Out</a></li>
+                                <li><a href="./blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/home/blog">Blog</a></li>
+                        <li><a href="/home/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="header__cart">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                        <li><a href="/cart"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                    </ul>
+                    <div class="header__cart__price">item: <span>$150.00</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="humberger__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section Begin -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__search__phone__icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="hero__search__phone__text">
+                        <h5>+84 919.504.570</h5>
+                        <span>support 24/7 time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="/food/findFood" method="post">
+                            <input type="text" name="food_name" placeholder="What are you looking for?">
+                            <button type="submit" class="site-btn">SEARCH</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <!-- login -->
+                        <button type="button" data-toggle="modal" data-target="#login">
+                            Login
+                        </button>
+                        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content clearfix">
+                                    <button class="close"><a href="/home" style="color: white;"><span aria-hidden="true">×</span></a></button>                                
+                                    <div class="modal-body">
+                                        <h3 class="title">Login Form</h3>
+                                        <p class="description">Login here using Phone & Password</p>
+                                        <form action="/user/login" method="post">
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-user"></i></span>
+                                                <input type="number" name="phone" class="form-control" placeholder="Enter your phone">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-key"></i></span>
+                                                <input type="password" name="password" class="form-control" placeholder="Enter your password">
+                                            </div>
+                                            <div class="form-group checkbox">
+                                                <input type="checkbox">
+                                                <label>Remamber me</label>
+                                            </div>
+                                            <a href="" class="forgot-pass">Forgot Password?</a>
+                                            <button type="submit" class="btn">Login</button>
+                                        </form>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- register -->
+                        <button type="button" data-toggle="modal" data-target="#register">
+                            Register
+                        </button>
+                        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content clearfix">
+                                    <button class="close"><a href="/home" style="color: white;"><span aria-hidden="true">×</span></a></button>                                
+                                    <div class="modal-body">
+                                        <h3 class="title">Register Form</h3>
+                                        <p class="description">Enter your information to register</p>
+                                        <form action="/user/register" method="post">
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-key"></i></span>
+                                                <input type="text" name="full_name" class="form-control" placeholder="Enter your full name">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-user"></i></span>
+                                                <input type="number" name="phone" class="form-control" placeholder="Enter your phone">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-key"></i></span>
+                                                <input type="password" name="password" class="form-control" placeholder="Enter your password">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-key"></i></span>
+                                                <input type="email" name="email" class="form-control" placeholder="Enter your email">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="input-icon"><i class="fa fa-key"></i></span>
+                                                <input type="text" name="address" class="form-control" placeholder="Enter your address">
+                                            </div>
+                                            
+                                            <a href="" class="forgot-pass">Forgot Password?</a>
+                                            <button type="submit" class="btn">Register</button>
+                                        </form>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</section>
